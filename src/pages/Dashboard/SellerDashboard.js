@@ -1,9 +1,9 @@
 import React, { useState } from "react";  
 import { useNavigate } from "react-router-dom"; 
-import AddProduct from "./Dashboard/AddProduct";
-import ManageProducts from "./Dashboard/ManageProducts";
-import Orders from "./Dashboard/Orders";
-import Earnings from "./Dashboard/Earnings";
+import AddProduct from "./AddProduct";
+import ManageProducts from "./ManageProducts";
+import Orders from "./Orders";
+import Earnings from "./Earnings";
 
 const SellerDashboard = () => { 
   const [activeSection] = useState("addProduct"); 

@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { auth, db } from '../firebase/config'; // Adjust the path as needed
+import { auth, db } from "../../firebase/config" 
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
-import { Link, useNavigate } from 'react-router-dom'; // Updated import
+import { Link, useNavigate } from 'react-router-dom';  
 import { Form, Input, Button, message, Modal, Checkbox } from 'antd';
-import { GoogleOutlined } from '@ant-design/icons';
-import '../scss/_login.scss'; // Import the SCSS file
+import { GoogleOutlined } from '@ant-design/icons'; 
 
 const Login = () => {
   const [loading, setLoading] = useState(false);

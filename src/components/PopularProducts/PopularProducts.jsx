@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { Card, Col, Row, notification } from "antd";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import { db } from "../../firebase/config";
 
 const PopularProducts = ({ addToCart }) => {
@@ -44,22 +44,24 @@ const PopularProducts = ({ addToCart }) => {
                       hoverable
                       cover={
                         product.image ? (
-                          <img
-                            alt={product.name}
-                            src={product.image}
-                            style={{
-                              width: "100%",
-                              height: "200px",
-                              objectFit: "cover",
-                            }}
-                          />
+                          <Link to={`/singleProduct/${product.id}`}>
+                            <img
+                              alt={product.name}
+                              src={product.image}
+                              style={{
+                                width: "100%",
+                                height: "200px",
+                                objectFit: "cover",
+                              }}
+                            />
+                          </Link>
                         ) : null
-                      } 
+                      }
                       style={{
-                        padding: "16px", // Add padding inside the card
+                        padding: "16px",
                         borderRadius: "8px",
                         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-                        marginBottom: "24px", // Add margin at the bottom of each card for spacing
+                        marginBottom: "24px",
                       }}
                     >
                       <Card.Meta

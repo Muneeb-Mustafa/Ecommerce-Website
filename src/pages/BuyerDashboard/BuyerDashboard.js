@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../firebase/config';
+import { db } from '../../firebase/config';
 import { collection, getDocs, addDoc, deleteDoc, doc } from 'firebase/firestore';
 import { Card, Button, Col, Row, Layout, Form, Input, Modal, notification, Select, Spin } from 'antd';
-import { useAuth } from '../contexts/AuthContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../scss/_buyerdashboard.scss'; 
+import { useAuth } from '../../contexts/AuthContext'; 
 import { Link } from 'react-router-dom';
 import { FaCartPlus, FaShoppingCart, FaRegListAlt   } from 'react-icons/fa';  
-import Hero from '../components/Shop/Hero';
+import Hero from '../../components/Shop/Hero';
 import { toast } from 'react-toastify';
 
 

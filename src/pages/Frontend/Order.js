@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table, notification, Badge } from 'antd';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth'; 
-import { db } from '../firebase/config';
+import { db } from '../../firebase/config'
 
 const Order = () => {
   const [orders, setOrders] = useState([]);

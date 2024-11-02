@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../scss/_accessdenied.scss'; // Import the SCSS file for custom styling
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const AccessDenied = () => {

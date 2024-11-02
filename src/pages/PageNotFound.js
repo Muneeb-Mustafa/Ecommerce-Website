@@ -1,7 +1,6 @@
 // src/pages/PageNotFound.js
 import React from 'react';
-import { FaExclamationTriangle } from 'react-icons/fa';
-import '../scss/_pagenotfound.scss';
+import { FaExclamationTriangle } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {

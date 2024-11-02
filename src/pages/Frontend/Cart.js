@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { toast } from "react-toastify";
+import { FaLongArrowAltLeft } from "react-icons/fa"; 
 import { message, Modal, Form, Input, Select, Button, notification } from "antd";
 import { addDoc, collection } from "firebase/firestore"; 
-import { getAuth } from "firebase/auth"; // Import Firebase Auth for user authentication
-import EmptyCart from "../components/EmptyCart/EmptyCart";
-import { db } from "../firebase/config";
+import { getAuth } from "firebase/auth";  
+import EmptyCart from "../../components/EmptyCart/EmptyCart";
+import { db } from "../../firebase/config"
 
 const initialState = { cardName: "", cardNumber: "", expiration: "", cvv: "" };
 

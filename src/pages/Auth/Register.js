@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { auth, db } from '../firebase/config';
+import { auth, db } from "../../firebase/config" 
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { Form, Input, Button, Radio, DatePicker, message } from 'antd';
-import { GoogleOutlined } from '@ant-design/icons';
-import '../scss/_registerpage.scss';
+import { GoogleOutlined } from '@ant-design/icons'; 
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {

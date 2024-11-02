@@ -91,7 +91,7 @@ const Footer = () => {
                   }}
                 />
                 <p>
-                  <Link to="/#" className="text-dark">
+                  <Link to="/shop" className="text-dark">
                     Shop
                   </Link>
                 </p>
